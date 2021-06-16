@@ -46,11 +46,10 @@ function gradeQuiz(candidateAnswers) {
   }
 
   for(i = 0; i < questions.length; i++) {
-    console.log("\n" + candidateName + "\n")
+    console.log("\n")
     console.log(`${i + 1}) ${questions[i]}`);
     console.log("Your answer: " + candidateAnswers[i] + "\n" + "Correct answer: " + correctAnswers[i])
   }
-
 
   console.log("\n" + ">>> Overall Grade: " + (score / 5) * 100 + "% (" + score + " of 5 responses correct)" + "\n" + ">>> Status:" + passOrFail + " <<<")
   return candidateAnswers;
@@ -61,6 +60,7 @@ function runProgram() {
   // TODO 1.1c: Ask for candidate's name //
 
   askQuestion();
+  console.log(candidateName)
   gradeQuiz(this.candidateAnswers);
 }
 

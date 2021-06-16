@@ -44,7 +44,7 @@ function gradeQuiz(candidateAnswers) {
   } else {
     passOrFail = "FAILED"
   }
-
+  console.log(candidateName)
   for(i = 0; i < questions.length; i++) {
     console.log("\n")
     console.log(`${i + 1}) ${questions[i]}`);
@@ -60,7 +60,6 @@ function runProgram() {
   // TODO 1.1c: Ask for candidate's name //
 
   askQuestion();
-  console.log(candidateName)
   gradeQuiz(this.candidateAnswers);
 }
 

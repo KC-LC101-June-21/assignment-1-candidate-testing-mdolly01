@@ -6,10 +6,18 @@ const input = require('readline-sync');
 let candidateName = "";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
 let question = "Who was the first American woman in space? ";
-let correctAnswer = "Sally Ride".toUpperCase();
+let question2 = "True or false: 5 kilometer = 5000 meters?";
+let question3 = "(5 + 3)/2 * 10 = ?";
+let question4 = "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?";
+let question5 = "What is the minimum crew size for the ISS?";
+let correctAnswer = "Sally Ride";
+let correctAnswer1 = "True";
+let correctAnswer2 = "40";
+let correctAnswer3 = "Trajectory";
+let correctAnswer4 = "3";
 let candidateAnswer = "";
-let questions = [question, "True or false: 5 kilometer = 5000 meters?", "(5 + 3)/2 * 10 = ?", "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?", "What is the minimum crew size for the ISS?"];
-let correctAnswers = [correctAnswer, "True".toUpperCase(), "40".toUpperCase(), "Trajectory".toUpperCase(), "3".toUpperCase()];
+let questions = [question, question2, question3, question4, question5];
+let correctAnswers = [correctAnswer, correctAnswer1, correctAnswer2, correctAnswer3, correctAnswer4];
 let candidateAnswers = [];
 
 

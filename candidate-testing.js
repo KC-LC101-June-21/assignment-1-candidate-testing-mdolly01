@@ -16,7 +16,7 @@ let correctAnswer2 = '40';
 let correctAnswer3 = 'Trajectory';
 let correctAnswer4 = '3';
 let candidateAnswer = '';
-let questions = [question, 'True or false: 5 kilometer = 5000 meters?', '(5 + 3)/2 * 10 = ?', '[\'Given the array [8, \'Orbit\', \'Trajectory\', 45], what entry is at index 2?', 'What is the minimum crew size for the ISS?'];
+let questions = [question, 'True or false: 5 kilometer = 5000 meters? ', '(5 + 3)/2 * 10 = ?', '[\'Given the array [8, \'Orbit\', \'Trajectory\', 45], what entry is at index 2?', 'What is the minimum crew size for the ISS?'];
 let correctAnswers = [correctAnswer.toUpperCase(), correctAnswer1.toUpperCase(), correctAnswer2.toUpperCase(), correctAnswer3.toUpperCase(), correctAnswer4.toUpperCase()];
 let candidateAnswers = [];
 
@@ -40,14 +40,14 @@ function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
 
-  let score = 0;
+  let grade = 0;
   for(i = 0; i < correctAnswers.length; i++) {
     if (correctAnswers[i].toUpperCase() === candidateAnswers[i].toUpperCase()) {
     score += 1
     } 
   }
   
-  if (score > 3) {
+  if (grade > 3) {
     passOrFail = "PASSED"
   } else {
     passOrFail = "FAILED"
@@ -59,7 +59,7 @@ function gradeQuiz(candidateAnswers) {
     console.log("Your answer: " + candidateAnswers[i] + "\n" + "Correct answer: " + correctAnswers[i])
   }
 
-  console.log("\n" + ">>> Overall Grade: " + (score / 5) * 100 + "% (" + score + " of 5 responses correct)" + "\n" + ">>> Status:" + passOrFail + " <<<")
+  console.log("\n" + ">>> Overall Grade: " + (grade / 5) * 100 + "% (" + grade + " of 5 responses correct)" + "\n" + ">>> Status:" + passOrFail + " <<<")
   return candidateAnswers;
 }
 

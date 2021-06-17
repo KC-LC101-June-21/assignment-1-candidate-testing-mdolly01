@@ -43,7 +43,7 @@ function gradeQuiz(candidateAnswers) {
   let grade = 0;
   for(i = 0; i < correctAnswers.length; i++) {
     if (correctAnswers[i].toUpperCase() === candidateAnswers[i].toUpperCase()) {
-    score += 1
+    grade += 1
     } 
   }
   

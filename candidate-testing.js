@@ -5,10 +5,10 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName = "";
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question = [];
+let question = "Who was the first American woman in space?";
 let correctAnswer = [];
 let candidateAnswer = [];
-let questions = ["Who was the first American woman in space?", "True or false: 5 kilometer = 5000 meters?", "(5 + 3)/2 * 10 = ?", "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?", "What is the minimum crew size for the ISS?"];
+let questions = [question, "True or false: 5 kilometer = 5000 meters?", "(5 + 3)/2 * 10 = ?", "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2?", "What is the minimum crew size for the ISS?"];
 let correctAnswers = ["Sally Ride", "True", "40", "Trajectory", "3"];
 let candidateAnswers = [];
 
@@ -22,8 +22,8 @@ function askQuestion(question) {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   //candidateAnswer = input.question(question)
   for(i = 0; i < questions.length; i++) {
-    let question = input.question(`${i + 1}) ${questions[i]}`);
-    candidateAnswers.push(question);
+    let answer = input.question(`${i + 1}) ${questions[i]}`);
+    candidateAnswers.push(answer);
   }
   return candidateAnswer
 }

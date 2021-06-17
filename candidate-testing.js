@@ -68,7 +68,7 @@ function runProgram() {
   // TODO 1.1c: Ask for candidate's name //
 
   askQuestion();
-  gradeQuiz(this.candidateAnswers);
+  grade = gradeQuiz(this.candidateAnswers);
 }
 
 // Don't write any code below this line //
